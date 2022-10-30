@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "created": {
+      "type": "integer"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "isPhoneVerified": {
+      "type": "boolean"
+    },
+    "isEmailVerified": {
+      "type": "boolean"
+    },
+    "wallets": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "userId",
+    "firstName",
+    "lastName",
+    "status",
+    "email",
+    "phone",
+    "countryCode",
+    "created",
+    "updated",
+    "wallets"
+  ]
+}

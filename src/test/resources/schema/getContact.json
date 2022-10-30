@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "Item": {
+          "type": "object",
+          "properties": {
+            "contactId": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "userId": {
+              "type": "string"
+            },
+            "isFavorite": {
+              "type": "boolean"
+            },
+            "email": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "address": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "address"
+                  ]
+                }
+              ]
+            },
+            "phone": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "number"
+                  ]
+                }
+              ]
+            },
+            "firstName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "contactId",
+            "lastName",
+            "userId",
+            "firstName"
+          ]
+        }
+      },
+      "required": [
+        "Item"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}

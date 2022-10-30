@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "nftId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "created": {
+          "type": "integer"
+        },
+        "filePath": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "ownerId": {
+          "type": "string"
+        },
+        "ownerWalletId": {
+          "type": "string"
+        },
+        "updated": {
+          "type": "integer"
+        },
+        "receiverWalletId": {
+          "type": "string"
+        },
+        "senderWalletId": {
+          "type": "string"
+        },
+        "categoryId": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {}
+        },
+        "title": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "object",
+          "properties": {
+            "countryCode": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "userId": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "created": {
+              "type": "integer"
+            },
+            "isPhoneVerified": {
+              "type": "boolean"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "isEmailVerified": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "countryCode",
+            "lastName",
+            "userId",
+            "status",
+            "created",
+            "isPhoneVerified",
+            "email",
+            "phone",
+            "firstName",
+            "isEmailVerified"
+          ]
+        }
+      },
+      "required": [
+        "nftId",
+        "status",
+        "filePath",
+        "transactionId",
+        "ownerId",
+        "ownerWalletId",
+        "receiverWalletId",
+        "senderWalletId",
+        "categoryId",
+        "description",
+        "title",
+        "owner"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APIs Smoke Test">
+    <test name="Near app Tests APIs" parallel="classes" verbose="2" thread-count="10">
+        <classes>
+            <class name="tests.users.invalidscenarios.CreateInvalidUser"/>
+            <class name="tests.users.invalidscenarios.GetInvalidUser"/>
+            <class name="tests.users.invalidscenarios.InvalidUpdateUser"/>
+            <class name="tests.users.invalidscenarios.VerifyLoginInvalid"/>
+            <class name="tests.users.validscenarios.CreateUser"/>
+            <class name="tests.users.validscenarios.GetUser"/>
+            <class name="tests.users.validscenarios.Login"/>
+            <class name="tests.users.validscenarios.UpdateUser"/>
+            <class name="tests.nfts.validscenarios.GetNft"/>
+            <class name="tests.nfts.validscenarios.GiftNft"/>
+            <class name="tests.nfts.validscenarios.CreateNft"/>
+            <class name="tests.nfts.validscenarios.UpdateNft"/>
+            <class name="tests.nfts.validscenarios.ListAllNfts"/>
+            <class name="tests.nfts.invalidscenarios.CreateInvalidNft"/>
+            <class name="tests.nfts.invalidscenarios.GetInvalidNft"/>
+            <class name="tests.nfts.invalidscenarios.GiftInvalidNft"/>
+            <class name="tests.nfts.invalidscenarios.ListInvalidNfts"/>
+            <class name="tests.contacts.invalidscenarios.GetInvalidContact"/>
+            <class name="tests.contacts.invalidscenarios.CreateInvalidContact"/>
+            <class name="tests.contacts.validscenarios.CreateContact"/>
+            <class name="tests.contacts.validscenarios.GetContact"/>
+            <class name="tests.contacts.validscenarios.ImportContacts"/>
+            <class name="tests.wallets.validscenarios.CreateWallet"/>
+            <class name="tests.wallets.invalidscenarios.CreateInvalidWallet"/>
+            <class name="tests.wallets.validscenarios.GetWallet"/>
+            <class name="tests.wallets.invalidscenarios.GetInvalidWallet"/>
+            <class name="tests.wallets.validscenarios.FetchWallets"/>
+            <class name="tests.wallets.validscenarios.DeleteWallet"/>
+            <class name="tests.wallets.invalidscenarios.FetchInvalidWallets"/>
+            <class name="tests.files.validscenarios.CreateFile"/>
+            <class name="tests.files.validscenarios.GetFile"/>
+            <class name="tests.files.invalidscenarios.CreateInvalidFile"/>
+            <class name="tests.files.invalidscenarios.GetInvalidFile"/>
+            <class name="tests.folders.validscenarios.CreateFolder"/>
+            <class name="tests.folders.invalidscenarios.CreateInvalidFolder"/>
+            <class name="tests.appsCategories.validscenarios.CreateAppCategory"/>
+            <class name="tests.appsCategories.validscenarios.GetAppCategory"/>
+            <class name="tests.appsCategories.invalidscenarios.CreateInvalidAppCategory"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->

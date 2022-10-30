@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "filePath": {
+          "type": "string"
+        },
+        "categoryId": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {}
+        },
+        "senderWalletId": {
+          "type": "string"
+        },
+        "ownerId": {
+          "type": "string"
+        },
+        "ownerWalletId": {
+          "type": "string"
+        },
+        "receiverWalletId": {
+          "type": "string"
+        },
+        "nftId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "created": {
+          "type": "integer"
+        },
+        "updated": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "filePath",
+        "senderWalletId",
+        "ownerId",
+        "ownerWalletId",
+        "receiverWalletId",
+        "nftId",
+        "status",
+        "transactionId"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}

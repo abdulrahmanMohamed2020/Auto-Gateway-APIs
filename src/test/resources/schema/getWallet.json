@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "walletId": {
+      "type": "string"
+    },
+    "transactionId": {
+      "type": "string"
+    },
+    "isBlockchainVerified": {
+      "type": "string"
+    },
+    "kycProvider": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "string"
+    },
+    "publicKey": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "walletName": {
+      "type": "string"
+    },
+    "storageProvider": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "blockchainHash": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "created",
+    "walletId",
+    "isBlockchainVerified",
+    "kycProvider",
+    "balance",
+    "publicKey",
+    "updated",
+    "walletName",
+    "storageProvider",
+    "userId",
+    "blockchainHash"
+  ]
+}

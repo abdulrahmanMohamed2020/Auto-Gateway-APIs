@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "dataEncryptionKey": {
+      "type": "object",
+      "properties": {
+        "encrypted": {
+          "type": "string"
+        },
+        "md5": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "encrypted",
+        "md5"
+      ]
+    },
+    "walletId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ownerId": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "storageProvider": {
+      "type": "string"
+    },
+    "fileId": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "publicUrl": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "path",
+    "created",
+    "dataEncryptionKey",
+    "walletId",
+    "name",
+    "ownerId",
+    "updated",
+    "storageProvider",
+    "fileId",
+    "userId",
+    "description",
+    "url",
+    "publicUrl"
+  ]
+}
